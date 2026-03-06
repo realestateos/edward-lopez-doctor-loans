@@ -435,6 +435,106 @@ body {
     margin: 0;
 }
 
+/* Learn More Section */
+.learn-more-section {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary) 100%);
+    color: var(--white);
+    padding: 80px 0;
+}
+
+.learn-more-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.learn-more-prefix {
+    color: var(--accent-red);
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.learn-more-content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.learn-more-intro {
+    font-size: 18px;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 50px;
+}
+
+.loan-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.loan-benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.loan-benefit-item:hover {
+    transform: translateY(-3px);
+    background: rgba(255,255,255,0.15);
+}
+
+.loan-benefit-item i {
+    font-size: 24px;
+    color: var(--accent-red);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.loan-benefit-item span {
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.95);
+}
+
+.btn-learn-more {
+    display: inline-block;
+    background: var(--accent-red);
+    color: var(--white);
+    padding: 18px 40px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.btn-learn-more:hover {
+    background: #c4211e;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(223, 41, 38, 0.3);
+}
+
+@media (max-width: 768px) {
+    .loan-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .learn-more-content h2 {
+        font-size: 28px;
+    }
+}
+
 /* About Section */
 .about-section {
     padding: 60px 0;
