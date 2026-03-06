@@ -48,29 +48,8 @@ function closeExitPopup() {
 // 2. SOCIAL PROOF COUNTERS
 // ==========================================
 function initSocialProof() {
-    // Doctors helped counter
-    const doctorsCounter = document.createElement('div');
-    doctorsCounter.className = 'social-proof-bar';
-    doctorsCounter.innerHTML = `
-        <div class="social-proof-item">
-            <i class="fas fa-user-md"></i>
-            <span><strong>127</strong> Arizona doctors helped this year</span>
-        </div>
-        <div class="social-proof-item">
-            <i class="fas fa-star"></i>
-            <span><strong>5</strong> doctors pre-approved this week</span>
-        </div>
-        <div class="social-proof-item">
-            <i class="fas fa-clock"></i>
-            <span>Next available: <strong>Tomorrow 2PM</strong></span>
-        </div>
-    `;
-    
-    const header = document.querySelector('.main-header');
-    if (header) {
-        header.after(doctorsCounter);
-    }
-}
+    // Social proof bar removed per request
+    return;
 
 // ==========================================
 // 3. RECENT ACTIVITY FEED
