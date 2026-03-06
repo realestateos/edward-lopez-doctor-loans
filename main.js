@@ -23,7 +23,7 @@ function showExitIntentPopup() {
                 <i class="fas fa-file-pdf"></i>
             </div>
             <h2>Wait! Get Your Free Guide</h2>
-            <p>Download our <strong>2025 Physician Mortgage Rate Guide</strong> with current rates, qualification requirements, and insider tips for Arizona doctors.</p>
+            <p>Download our <strong>Physician Mortgage Rate Guide</strong> with current rates, qualification requirements, and insider tips for Arizona doctors.</p>
             <form onsubmit="submitLeadMagnet(event, 'rate-guide')">
                 <input type="email" placeholder="Your email address" required>
                 <button type="submit" class="btn-primary">Send Me The Guide!</button>
