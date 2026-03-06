@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Qualify - Arizona Doctor Loans</title>
+    <meta name="description" content="See if you're eligible for physician mortgage programs. Free pre-qualification for doctors in Arizona.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🏥</span>
+                    <span class="logo-text">Texas Doctor Loans</span>
+                </a>
+                <nav class="main-nav">
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="physician-mortgages.html">Physician Mortgages</a></li>
+                        <li><a href="prequalify.html" class="active">Pre-Qualify</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <a href="contact.html" class="btn btn-primary header-cta">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Pre-Qualify</h1>
+            <p>See if you're eligible for Physician & Advanced Medical Professional mortgage programs</p>
+        </div>
+    </section>
+
+    <!-- Prequalify Form Section -->
+    <section class="prequalify-section">
+        <div class="container">
+            <div class="prequalify-wrapper">
+                <div class="form-header">
+                    <span class="section-tag">Get Started Today</span>
+                    <h2>Check Your Eligibility</h2>
+                    <p>Fill out the form below to the best of your knowledge to see if you meet the preliminary eligibility requirements for our Physician & Advanced Medical Professional mortgage programs.</p>
+                </div>
+
+                <form class="contact-form prequalify-form" id="prequalifyForm" action="#" method="POST">
+                    <div class="form-section">
+                        <h3>Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required placeholder="John">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required placeholder="Smith">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="john.smith@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Professional Information</h3>
+                        <div class="form-group">
+                            <label for="profession">Medical Profession *</label>
+                            <select id="profession" name="profession" required>
+                                <option value="">Select your profession</option>
+                                <option value="md">MD - Doctor of Medicine</option>
+                                <option value="do">DO - Doctor of Osteopathic Medicine</option>
+                                <option value="dds">DDS/DMD - Dentist</option>
+                                <option value="dvm">DVM - Veterinarian</option>
+                                <option value="np">NP - Nurse Practitioner</option>
+                                <option value="pa">PA - Physician Assistant</option>
+                                <option value="crna">CRNA - Nurse Anesthetist</option>
+                                <option value="pharmd">PharmD - Pharmacist</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="careerStage">Career Stage *</label>
+                            <select id="careerStage" name="careerStage" required>
+                                <option value="">Select your career stage</option>
+                                <option value="resident">Resident</option>
+                                <option value="fellow">Fellow</option>
+                                <option value="attending">Attending Physician</option>
+                                <option value="self-employed">Self-Employed / 1099</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="specialty">Medical Specialty</label>
+                            <input type="text" id="specialty" name="specialty" placeholder="e.g., Cardiology, Family Medicine">
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Financial Information</h3>
+                        <div class="form-group">
+                            <label for="employmentStatus">Employment Status *</label>
+                            <select id="employmentStatus" name="employmentStatus" required>
+                                <option value="">Select status</option>
+                                <option value="employed-w2">Employed (W-2)</option>
+                                <option value="self-employed">Self-Employed (1099)</option>
+                                <option value="contract">Contract Employee</option>
+                                <option value="new-contract">Have New Contract (Not Started)</option>
+                                <option value="student">Still in Training</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="annualIncome">Annual Income (or Contract Amount)</label>
+                            <select id="annualIncome" name="annualIncome">
+                                <option value="">Select range</option>
+                                <option value="under-50k">Under $50,000</option>
+                                <option value="50k-100k">$50,000 - $100,000</option>
+                                <option value="100k-200k">$100,000 - $200,000</option>
+                                <option value="200k-300k">$200,000 - $300,000</option>
+                                <option value="300k-500k">$300,000 - $500,000</option>
+                                <option value="over-500k">Over $500,000</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Do you have student loans? *</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="studentLoans" value="yes" required>
+                                    <span>Yes</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="studentLoans" value="no">
+                                    <span>No</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group" id="loanDefermentGroup" style="display:none;">
+                            <label>Are your student loans deferred for more than 12 months?</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="loanDeferred" value="yes">
+                                    <span>Yes</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="loanDeferred" value="no">
+                                    <span>No</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Home Purchase Plans</h3>
+                        <div class="form-group">
+                            <label for="purchaseTimeline">When do you plan to purchase? *</label>
+                            <select id="purchaseTimeline" name="purchaseTimeline" required>
+                                <option value="">Select timeline</option>
+                                <option value="immediately">Immediately</option>
+                                <option value="1-3-months">1-3 Months</option>
+                                <option value="3-6-months">3-6 Months</option>
+                                <option value="6-12-months">6-12 Months</option>
+                                <option value="just-researching">Just Researching</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="propertyType">Property Type</label>
+                            <select id="propertyType" name="propertyType">
+                                <option value="">Select type</option>
+                                <option value="single-family">Single Family Home</option>
+                                <option value="condo">Condominium</option>
+                                <option value="townhome">Townhome</option>
+                                <option value="not-sure">Not Sure Yet</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="homePrice">Estimated Home Price Range</label>
+                            <select id="homePrice" name="homePrice">
+                                <option value="">Select range</option>
+                                <option value="under-300k">Under $300,000</option>
+                                <option value="300k-500k">$300,000 - $500,000</option>
+                                <option value="500k-750k">$500,000 - $750,000</option>
+                                <option value="750k-1m">$750,000 - $1,000,000</option>
+                                <option value="1m-plus">Over $1,000,000</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="consent" required>
+                            <span class="checkmark"></span>
+                            <span class="checkbox-text">I consent to being contacted about physician mortgage options. I understand this is not a commitment to lend and all loans are subject to credit approval. *</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg btn-full">Check My Eligibility</button>
+
+                    <p class="form-disclaimer">* Required fields. Your information is secure and will never be shared with third parties. This pre-qualification does not constitute a loan approval.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">🏥</span>
+                        <span class="logo-text">Texas Doctor Loans</span>
+                    </a>
+                    <p>Specialized mortgage solutions for physicians and medical professionals in Arizona.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="physician-mortgages.html">Physician Mortgages</a></li>
+                            <li><a href="prequalify.html">Pre-Qualify</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li>602-217-1591</li>
+                            <li>480-261-9269</li>
+                            <li>edward.lopez@bokf.com</li>
+                            <li>901 N Dobson Road</li>
+                            <li>Mesa, AZ 85201</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Texas Doctor Loans. NMLS ID: 598677. BOK Financial NMLS: 403501. All rights reserved.</p>
+                <p class="footer-disclaimer">BOK Financial® is a trademark of BOKF, NA. Member FDIC. Equal Housing Lender. All loans are subject to credit approval.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
