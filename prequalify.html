@@ -70,218 +70,535 @@
         </div>
     </section>
 
-    <!-- Application Form -->
+    <!-- Multi-Step Application Form -->
     <section class="section">
         <div class="container">
-            <div class="two-column">
-                <div>
-                    <h2 style="color: var(--primary-dark); margin-bottom: 20px;">Why Get Pre-Qualified?</h2>
-                    <ul class="check-list" style="margin-bottom: 30px;">
-                        <li>Know exactly how much home you can afford</li>
-                        <li>Shop with confidence like a cash buyer</li>
-                        <li>Make stronger offers with pre-approval letter</li>
-                        <li>Close faster with pre-completed paperwork</li>
-                        <li>No impact on your credit score</li>
-                        <li>No obligation or commitment required</li>
-                    </ul>
-                    
-                    <h3 style="color: var(--primary-dark); margin-bottom: 15px;">What You'll Need</h3>
-                    <p style="margin-bottom: 15px;">To complete your pre-qualification, please have the following information ready:</p>
-                    <ul class="check-list">
-                        <li>Basic personal information</li>
-                        <li>Current employment details</li>
-                        <li>Annual income information</li>
-                        <li>Approximate monthly debts</li>
-                        <li>Estimated credit score range</li>
-                        <li>Desired home price range</li>
-                    </ul>
-                    
-                    <div style="background: var(--bg-light); padding: 25px; border-radius: 8px; margin-top: 30px;">
-                        <h4 style="color: var(--primary-dark); margin-bottom: 10px;"><i class="fas fa-shield-alt" style="color: var(--accent-red); margin-right: 10px;"></i>Your Information is Secure</h4>
-                        <p style="font-size: 14px; margin: 0;">We use bank-level encryption to protect your personal information. Your data is never sold or shared with third parties.</p>
+            <div class="stepper-container">
+                <!-- Benefits Sidebar -->
+                <div class="stepper-benefits">
+                    <div class="benefits-card">
+                        <h3><i class="fas fa-rocket"></i> Why Get Pre-Qualified?</h3>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check"></i> Know exactly how much home you can afford</li>
+                            <li><i class="fas fa-check"></i> Shop with confidence like a cash buyer</li>
+                            <li><i class="fas fa-check"></i> Make stronger offers with pre-approval letter</li>
+                            <li><i class="fas fa-check"></i> Close faster with pre-completed paperwork</li>
+                            <li><i class="fas fa-check"></i> No impact on your credit score</li>
+                            <li><i class="fas fa-check"></i> No obligation or commitment required</li>
+                        </ul>
+                        
+                        <div class="trust-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <strong>Your Information is Secure</strong>
+                                <span>Bank-level encryption. Never sold or shared.</span>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-mini">
+                            <p>"Edward got us pre-approved in 24 hours and we closed 3 weeks later!"</p>
+                            <div class="testimonial-author">
+                                <strong>Dr. Sarah Chen</strong>
+                                <span>Cardiology Resident</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="contact-form" style="background: white; box-shadow: 0 10px 40px rgba(0,0,0,0.1);">
-                    <h3 style="color: var(--primary-dark); margin-bottom: 10px;">Physician Mortgage Pre-Qualification</h3>
-                    <p style="font-size: 14px; color: var(--text-gray); margin-bottom: 25px;">Complete this form for your free, no-obligation consultation. We'll respond within 24 hours.</p>
-                    
-                    <form action="#" method="POST">
-                        <h4 style="color: var(--primary-dark); margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px solid var(--accent-red);">Personal Information</h4>
-                        
-                        <div class="form-group">
-                            <label for="firstName">First Name *</label>
-                            <input type="text" id="firstName" name="firstName" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="lastName">Last Name *</label>
-                            <input type="text" id="lastName" name="lastName" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        
-                        <h4 style="color: var(--primary-dark); margin: 30px 0 15px; padding-bottom: 10px; border-bottom: 2px solid var(--accent-red);">Professional Information</h4>
-                        
-                        <div class="form-group">
-                            <label for="profession">Profession *</label>
-                            <select id="profession" name="profession" required>
-                                <option value="">Select your profession</option>
-                                <option value="md">Medical Doctor (MD)</option>
-                                <option value="do">Doctor of Osteopathic Medicine (DO)</option>
-                                <option value="dds">Doctor of Dental Surgery (DDS)</option>
-                                <option value="dmd">Doctor of Dental Medicine (DMD)</option>
-                                <option value="dpm">Doctor of Podiatric Medicine (DPM)</option>
-                                <option value="od">Doctor of Optometry (OD)</option>
-                                <option value="dvm">Doctor of Veterinary Medicine (DVM)</option>
-                                <option value="other">Other Medical Professional</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="careerStage">Career Stage *</label>
-                            <select id="careerStage" name="careerStage" required>
-                                <option value="">Select your career stage</option>
-                                <option value="medical-student">Medical Student</option>
-                                <option value="resident-pgy1">Resident - PGY-1</option>
-                                <option value="resident-pgy2">Resident - PGY-2</option>
-                                <option value="resident-pgy3">Resident - PGY-3</option>
-                                <option value="resident-pgy4">Resident - PGY-4</option>
-                                <option value="resident-pgy5">Resident - PGY-5</option>
-                                <option value="resident-pgy6">Resident - PGY-6</option>
-                                <option value="resident-pgy7">Resident - PGY-7</option>
-                                <option value="fellow">Fellow</option>
-                                <option value="new-attending">New Attending (0-2 years)</option>
-                                <option value="established">Established Physician (2+ years)</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="employer">Current Employer/Institution</label>
-                            <input type="text" id="employer" name="employer" placeholder="e.g., Banner Health, Mayo Clinic, etc.">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="annualIncome">Annual Income *</label>
-                            <select id="annualIncome" name="annualIncome" required>
-                                <option value="">Select income range</option>
-                                <option value="50-75k">$50,000 - $75,000</option>
-                                <option value="75-100k">$75,000 - $100,000</option>
-                                <option value="100-150k">$100,000 - $150,000</option>
-                                <option value="150-200k">$150,000 - $200,000</option>
-                                <option value="200-250k">$200,000 - $250,000</option>
-                                <option value="250-300k">$250,000 - $300,000</option>
-                                <option value="300k+">$300,000+</option>
-                            </select>
-                        </div>
-                        
-                        <h4 style="color: var(--primary-dark); margin: 30px 0 15px; padding-bottom: 10px; border-bottom: 2px solid var(--accent-red);">Loan Information</h4>
-                        
-                        <div class="form-group">
-                            <label for="loanPurpose">Loan Purpose *</label>
-                            <select id="loanPurpose" name="loanPurpose" required>
-                                <option value="">Select purpose</option>
-                                <option value="purchase">Home Purchase</option>
-                                <option value="refinance">Refinance</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="homePrice">Desired Home Price Range *</label>
-                            <select id="homePrice" name="homePrice" required>
-                                <option value="">Select price range</option>
-                                <option value="300-400k">$300,000 - $400,000</option>
-                                <option value="400-500k">$400,000 - $500,000</option>
-                                <option value="500-600k">$500,000 - $600,000</option>
-                                <option value="600-750k">$600,000 - $750,000</option>
-                                <option value="750k-1m">$750,000 - $1,000,000</option>
-                                <option value="1m+">$1,000,000+</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="creditScore">Estimated Credit Score</label>
-                            <select id="creditScore" name="creditScore">
-                                <option value="">Select range (optional)</option>
-                                <option value="excellent">Excellent (740+)</option>
-                                <option value="very-good">Very Good (700-739)</option>
-                                <option value="good">Good (670-699)</option>
-                                <option value="fair">Fair (650-669)</option>
-                                <option value="below-650">Below 650</option>
-                                <option value="unsure">Not Sure</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="timeframe">When are you looking to buy?</label>
-                            <select id="timeframe" name="timeframe">
-                                <option value="">Select timeframe</option>
-                                <option value="immediately">Immediately</option>
-                                <option value="1-3-months">1-3 Months</option>
-                                <option value="3-6-months">3-6 Months</option>
-                                <option value="6-12-months">6-12 Months</option>
-                                <option value="12-months-plus">12+ Months</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="comments">Additional Comments</label>
-                            <textarea id="comments" name="comments" rows="3" placeholder="Tell us about your specific situation, questions, or concerns..."></textarea>
-                        </div>
-                        
-                        <div class="form-group" style="display: flex; align-items: flex-start; gap: 10px;">
-                            <input type="checkbox" id="consent" name="consent" required style="width: auto; margin-top: 5px;">
-                            <label for="consent" style="margin: 0; font-weight: 400; font-size: 14px;">I consent to being contacted by Edward Lopez regarding my physician mortgage inquiry. I understand this is not a commitment to lend and does not constitute a loan application. *</label>
-                        </div>
-                        
-                        <button type="submit" class="btn-submit" style="margin-top: 20px;">
-                            <i class="fas fa-paper-plane" style="margin-right: 10px;"></i>Submit Application
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Features Section -->
-    <section class="section section-light">
-        <div class="container">
-            <div class="section-title">
-                <h2>What Happens Next?</h2>
-                <p>Your path to physician mortgage approval</p>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; text-align: center;">
-                <div style="background: white; padding: 35px; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
-                    <div style="width: 60px; height: 60px; background: var(--primary-dark); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 24px; font-weight: 500;">1</div>
-                    <h4 style="color: var(--primary-dark); margin-bottom: 10px;">Submit Application</h4>
-                    <p style="font-size: 14px; margin: 0;">Complete the pre-qualification form with your basic information.</p>
-                </div>
-                
-                <div style="background: white; padding: 35px; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
-                    <div style="width: 60px; height: 60px; background: var(--primary-dark); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 24px; font-weight: 500;">2</div>
-                    <h4 style="color: var(--primary-dark); margin-bottom: 10px;">Review & Contact</h4>
-                    <p style="font-size: 14px; margin: 0;">Edward reviews your application and contacts you within 24 hours.</p>
-                </div>
-                
-                <div style="background: white; padding: 35px; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
-                    <div style="width: 60px; height: 60px; background: var(--primary-dark); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 24px; font-weight: 500;">3</div>
-                    <h4 style="color: var(--primary-dark); margin-bottom: 10px;">Pre-Approval Letter</h4>
-                    <p style="font-size: 14px; margin: 0;">Receive your pre-approval letter to shop with confidence.</p>
-                </div>
-                
-                <div style="background: white; padding: 35px; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
-                    <div style="width: 60px; height: 60px; background: var(--primary-dark); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 24px; font-weight: 500;">4</div>
-                    <h4 style="color: var(--primary-dark); margin-bottom: 10px;">Find Your Home</h4>
-                    <p style="font-size: 14px; margin: 0;">Start shopping with your pre-approval and close in 30 days or less.</p>
+                <!-- Stepper Form -->
+                <div class="stepper-form-wrapper">
+                    <div class="stepper-header">
+                        <div class="stepper-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                            <div class="step-indicators">
+                                <div class="step-dot active" data-step="1">
+                                    <span class="step-number">1</span>
+                                    <span class="step-label">Basic Info</span>
+                                </div>
+                                <div class="step-dot" data-step="2">
+                                    <span class="step-number">2</span>
+                                    <span class="step-label">Profession</span>
+                                </div>
+                                <div class="step-dot" data-step="3">
+                                    <span class="step-number">3</span>
+                                    <span class="step-label">Financial</span>
+                                </div>
+                                <div class="step-dot" data-step="4">
+                                    <span class="step-number">4</span>
+                                    <span class="step-label">Property</span>
+                                </div>
+                                <div class="step-dot" data-step="5">
+                                    <span class="step-number">5</span>
+                                    <span class="step-label">Review</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-timer">
+                            <i class="fas fa-clock"></i>
+                            <span>Takes less than 3 minutes</span>
+                        </div>
+                    </div>
+
+                    <form class="stepper-form" id="prequalForm">
+                        <!-- Step 1: Basic Info -->
+                        <div class="form-step active" data-step="1">
+                            <div class="step-header">
+                                <h2>Let's Get Started</h2>
+                                <p>First, we need some basic information to reach you.</p>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group half">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                                </div>
+                                <div class="form-group half">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="john.smith@email.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(480) 555-0199" required>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="smsConsent" name="smsConsent">
+                                    <span>I agree to receive SMS updates about my application (optional)</span>
+                                </label>
+                            </div>
+                            
+                            <div class="step-actions">
+                                <button type="button" class="btn-next" onclick="nextStep()">
+                                    Continue <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Professional Info -->
+                        <div class="form-step" data-step="2">
+                            <div class="step-header">
+                                <h2>Your Medical Career</h2>
+                                <p>Tell us about your profession so we can match you with the right program.</p>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="profession">Medical Profession *</label>
+                                <div class="radio-group">
+                                    <label class="radio-card">
+                                        <input type="radio" name="profession" value="md" required>
+                                        <span class="radio-content">
+                                            <i class="fas fa-user-md"></i>
+                                            <strong>MD</strong>
+                                            <span>Medical Doctor</span>
+                                        </span>
+                                    </label>
+                                    <label class="radio-card">
+                                        <input type="radio" name="profession" value="do">
+                                        <span class="radio-content">
+                                            <i class="fas fa-stethoscope"></i>
+                                            <strong>DO</strong>
+                                            <span>Osteopathic</span>
+                                        </span>
+                                    </label>
+                                    <label class="radio-card">
+                                        <input type="radio" name="profession" value="dds-dmd">
+                                        <span class="radio-content">
+                                            <i class="fas fa-tooth"></i>
+                                            <strong>DDS/DMD</strong>
+                                            <span>Dentist</span>
+                                        </span>
+                                    </label>
+                                    <label class="radio-card">
+                                        <input type="radio" name="profession" value="other">
+                                        <span class="radio-content">
+                                            <i class="fas fa-heartbeat"></i>
+                                            <strong>Other</strong>
+                                            <span>DPM, OD, DVM</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="careerStage">Career Stage *</label>
+                                <select id="careerStage" name="careerStage" required>
+                                    <option value="">Select your stage</option>
+                                    <option value="medical-student">Medical Student</option>
+                                    <option value="resident-pgy1">Resident - PGY-1</option>
+                                    <option value="resident-pgy2">Resident - PGY-2</option>
+                                    <option value="resident-pgy3">Resident - PGY-3</option>
+                                    <option value="resident-pgy4">Resident - PGY-4</option>
+                                    <option value="resident-pgy5">Resident - PGY-5</option>
+                                    <option value="resident-pgy6">Resident - PGY-6</option>
+                                    <option value="resident-pgy7">Resident - PGY-7</option>
+                                    <option value="fellow">Fellow</option>
+                                    <option value="new-attending">New Attending (0-2 years)</option>
+                                    <option value="established">Established Physician (2+ years)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="employer">Current Employer/Hospital</label>
+                                <input type="text" id="employer" name="employer" placeholder="e.g., Banner Health, Mayo Clinic">
+                            </div>
+                            
+                            <div class="step-actions">
+                                <button type="button" class="btn-prev" onclick="prevStep()">
+                                    <i class="fas fa-arrow-left"></i> Back
+                                </button>
+                                <button type="button" class="btn-next" onclick="nextStep()">
+                                    Continue <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Financial Info -->
+                        <div class="form-step" data-step="3">
+                            <div class="step-header">
+                                <h2>Your Finances</h2>
+                                <p>This helps us determine your pre-qualification amount. No credit check yet!</p>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="annualIncome">Annual Income *</label>
+                                <div class="income-options">
+                                    <label class="income-card">
+                                        <input type="radio" name="annualIncome" value="50-100k" required>
+                                        <span>$50K - $100K</span>
+                                    </label>
+                                    <label class="income-card">
+                                        <input type="radio" name="annualIncome" value="100-150k">
+                                        <span>$100K - $150K</span>
+                                    </label>
+                                    <label class="income-card">
+                                        <input type="radio" name="annualIncome" value="150-200k">
+                                        <span>$150K - $200K</span>
+                                    </label>
+                                    <label class="income-card">
+                                        <input type="radio" name="annualIncome" value="200-250k">
+                                        <span>$200K - $250K</span>
+                                    </label>
+                                    <label class="income-card">
+                                        <input type="radio" name="annualIncome" value="250-300k">
+                                        <span>$250K - $300K</span>
+                                    </label>
+                                    <label class="income-card">
+                                        <input type="radio" name="annualIncome" value="300k+">
+                                        <span>$300K+</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="monthlyDebts">Monthly Debt Payments</label>
+                                <select id="monthlyDebts" name="monthlyDebts">
+                                    <option value="0">$0</option>
+                                    <option value="500">$1 - $500</option>
+                                    <option value="1000">$501 - $1,000</option>
+                                    <option value="1500">$1,001 - $1,500</option>
+                                    <option value="2000">$1,501 - $2,000</option>
+                                    <option value="2500">$2,001 - $2,500</option>
+                                    <option value="3000">$2,501 - $3,000</option>
+                                    <option value="3000+">$3,000+</option>
+                                </select>
+                                <span class="field-help">Credit cards, car loans, student loans (excluding deferred)</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="downPayment">Available Down Payment</label>
+                                <select id="downPayment" name="downPayment">
+                                    <option value="0">$0 - 0% down</option>
+                                    <option value="10k">$10,000</option>
+                                    <option value="25k">$25,000</option>
+                                    <option value="50k">$50,000</option>
+                                    <option value="75k">$75,000</option>
+                                    <option value="100k">$100,000+</option>
+                                </select>
+                                <span class="field-help">Physician loans offer up to 100% financing</span>
+                            </div>
+                            
+                            <div class="step-actions">
+                                <button type="button" class="btn-prev" onclick="prevStep()">
+                                    <i class="fas fa-arrow-left"></i> Back
+                                </button>
+                                <button type="button" class="btn-next" onclick="nextStep()">
+                                    Continue <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Property/Timeline -->
+                        <div class="form-step" data-step="4">
+                            <div class="step-header">
+                                <h2>Your Home Search</h2>
+                                <p>Tell us about the home you're looking for.</p>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="loanPurpose">Are you looking to? *</label>
+                                <div class="purpose-cards">
+                                    <label class="purpose-card">
+                                        <input type="radio" name="loanPurpose" value="purchase" required>
+                                        <span class="purpose-content">
+                                            <i class="fas fa-home"></i>
+                                            <strong>Buy a Home</strong>
+                                            <span>First purchase or upgrade</span>
+                                        </span>
+                                    </label>
+                                    <label class="purpose-card">
+                                        <input type="radio" name="loanPurpose" value="refinance">
+                                        <span class="purpose-content">
+                                            <i class="fas fa-sync-alt"></i>
+                                            <strong>Refinance</strong>
+                                            <span>Lower rate or cash out</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="homePrice">Desired Home Price *</label>
+                                <select id="homePrice" name="homePrice" required>
+                                    <option value="">Select price range</option>
+                                    <option value="300-400k">$300,000 - $400,000</option>
+                                    <option value="400-500k">$400,000 - $500,000</option>
+                                    <option value="500-600k">$500,000 - $600,000</option>
+                                    <option value="600-750k">$600,000 - $750,000</option>
+                                    <option value="750k-1m">$750,000 - $1,000,000</option>
+                                    <option value="1m-1.5m">$1,000,000 - $1,500,000</option>
+                                    <option value="1.5m+">$1,500,000+</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group half">
+                                    <label for="timeframe">When do you want to buy? *</label>
+                                    <select id="timeframe" name="timeframe" required>
+                                        <option value="immediately">Immediately</option>
+                                        <option value="1-3-months">1-3 Months</option>
+                                        <option value="3-6-months" selected>3-6 Months</option>
+                                        <option value="6-12-months">6-12 Months</option>
+                                        <option value="12-months-plus">12+ Months</option>
+                                    </select>
+                                </div>
+                                <div class="form-group half">
+                                    <label for="creditScore">Credit Score (optional)</label>
+                                    <select id="creditScore" name="creditScore">
+                                        <option value="">Select range</option>
+                                        <option value="excellent">Excellent (740+)</option>
+                                        <option value="very-good">Very Good (700-739)</option>
+                                        <option value="good">Good (670-699)</option>
+                                        <option value="fair">Fair (650-669)</option>
+                                        <option value="below-650">Below 650</option>
+                                        <option value="unsure">Not Sure</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="estimated-qualification" id="estQualification">
+                                <div class="est-icon">
+                                    <i class="fas fa-calculator"></i>
+                                </div>
+                                <div class="est-content">
+                                    <span class="est-label">Based on your income:</span>
+                                    <span class="est-amount" id="estAmount">Calculating...</span>
+                                    <span class="est-note">This is an estimate. Your actual pre-approval may vary.</span>
+                                </div>
+                            </div>
+                            
+                            <div class="step-actions">
+                                <button type="button" class="btn-prev" onclick="prevStep()">
+                                    <i class="fas fa-arrow-left"></i> Back
+                                </button>
+                                <button type="button" class="btn-next" onclick="nextStep()">
+                                    Review <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 5: Review & Submit -->
+                        <div class="form-step" data-step="5">
+                            <div class="step-header">
+                                <h2>Review Your Application</h2>
+                                <p>Please verify your information before submitting.</p>
+                            </div>
+                            
+                            <div class="review-section">
+                                <div class="review-group">
+                                    <h4><i class="fas fa-user"></i> Personal Information</h4>
+                                    <div class="review-item">
+                                        <span class="review-label">Name</span>
+                                        <span class="review-value" id="reviewName">-</span>
+                                        <button type="button" class="edit-btn" onclick="goToStep(1)">Edit</button>
+                                    </div>
+                                    <div class="review-item">
+                                        <span class="review-label">Email</span>
+                                        <span class="review-value" id="reviewEmail">-</span>
+                                        <button type="button" class="edit-btn" onclick="goToStep(1)">Edit</button>
+                                    </div>
+                                    <div class="review-item">
+                                        <span class="review-label">Phone</span>
+                                        <span class="review-value" id="reviewPhone">-</span>
+                                        <button type="button" class="edit-btn" onclick="goToStep(1)">Edit</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="review-group">
+                                    <h4><i class="fas fa-briefcase-medical"></i> Professional Information</h4>
+                                    <div class="review-item">
+                                        <span class="review-label">Profession</span>
+                                        <span class="review-value" id="reviewProfession">-</span>
+                                        <button type="button" class="edit-btn" onclick="goToStep(2)">Edit</button>
+                                    </div>
+                                    <div class="review-item">
+                                        <span class="review-label">Career Stage</span>
+                                        <span class="review-value" id="reviewCareer">-</span>
+                                        <button type="button" class="edit-btn" onclick="goToStep(2)">Edit</button>
+                                    </div>
+                                    <div class="review-item">
+                                        <span class="review-label">Employer</span>
+                                        <span class="review-value" id="reviewEmployer">-</span>
+                                        <button type="button" class="edit-btn" onclick="goToStep(2)">Edit</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="review-group">
+                                    <h4><i class="fas fa-dollar-sign"></i> Financial Information</h4>
+                                    <div class="review-item">
+                                        <span class="review-label">Annual Income</span>
+                                        <span class="review-value" id="reviewIncome">-</span>
+                                        <button type="button" class="edit-btn" onclick="goToStep(3)">Edit</button>
+                                    </div>
+                                    <div class="review-item">
+                                        <span class="review-label">Monthly Debts</span>
+                                        <span class="review-value" id="reviewDebts">-</span>
+                                        <button type="button" class="edit-btn" onclick="goToStep(3)">Edit</button>
+                                    </div>
+                                    <div class="review-item">
+                                        <span class="review-label">Down Payment</span>
+                                        <span class="review-value" id="reviewDownPayment">-</span>
+                                        <button type="button" class="edit-btn" onclick="goToStep(3)">Edit</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="review-group">
+                                    <h4><i class="fas fa-home"></i> Property Information</h4>
+                                    <div class="review-item">
+                                        <span class="review-label">Purpose</span>
+                                        <span class="review-value" id="reviewPurpose">-</span>
+                                        <button type="button" class="edit-btn" onclick="goToStep(4)">Edit</button>
+                                    </div>
+                                    <div class="review-item">
+                                        <span class="review-label">Price Range</span>
+                                        <span class="review-value" id="reviewPrice">-</span>
+                                        <button type="button" class="edit-btn" onclick="goToStep(4)">Edit</button>
+                                    </div>
+                                    <div class="review-item">
+                                        <span class="review-label">Timeline</span>
+                                        <span class="review-value" id="reviewTimeline">-</span>
+                                        <button type="button" class="edit-btn" onclick="goToStep(4)">Edit</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group checkbox-group consent-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="consent" name="consent" required>
+                                    <span>I consent to being contacted by Edward Lopez regarding my physician mortgage inquiry. I understand this is not a commitment to lend and does not constitute a loan application. *</span>
+                                </label>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="tcpaConsent" name="tcpaConsent">
+                                    <span>I agree to receive calls and text messages about my mortgage inquiry. Message and data rates may apply.</span>
+                                </label>
+                            </div>
+                            
+                            <div class="step-actions">
+                                <button type="button" class="btn-prev" onclick="prevStep()">
+                                    <i class="fas fa-arrow-left"></i> Back
+                                </button>
+                                <button type="submit" class="btn-submit-final">
+                                    <i class="fas fa-paper-plane"></i> Submit Application
+                                </button>
+                            </div>
+                            
+                            <p class="submit-note">
+                                <i class="fas fa-shield-alt"></i>
+                                Your information is encrypted and secure. Edward will contact you within 24 hours.
+                            </p>
+                        </div>
+                    </form>
+                    
+                    <!-- Success Message (Hidden by default) -->
+                    <div class="success-message-full" id="successMessage" style="display: none;">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h2>Application Submitted!</h2>
+                        <p>Thank you, <span id="successName"></span>! Your pre-qualification application has been received.</p>
+                        
+                        <div class="success-details">
+                            <div class="success-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>Confirmation email sent to <strong id="successEmail"></strong></span>
+                            </div>
+                            <div class="success-item">
+                                <i class="fas fa-phone"></i>
+                                <span>Edward will call you within <strong>24 hours</strong></span>
+                            </div>
+                            <div class="success-item">
+                                <i class="fas fa-file-alt"></i>
+                                <span>Pre-approval letter ready in <strong>1-2 business days</strong></span>
+                            </div>
+                        </div>
+                        
+                        <div class="next-steps">
+                            <h3>What happens next?</h3>
+                            <div class="next-step-items">
+                                <div class="next-step">
+                                    <span class="step-num">1</span>
+                                    <span>Edward reviews your application</span>
+                                </div>
+                                <div class="next-step">
+                                    <span class="step-num">2</span>
+                                    <span>Phone consultation scheduled</span>
+                                </div>
+                                <div class="next-step">
+                                    <span class="step-num">3</span>
+                                    <span>Receive your pre-approval letter</span>
+                                </div>
+                                <div class="next-step">
+                                    <span class="step-num">4</span>
+                                    <span>Start shopping with confidence!</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="success-cta">
+                            <a href="tel:4805550199" class="btn-call-now">
+                                <i class="fas fa-phone"></i> Call Edward Now
+                            </a>
+                            <a href="index.html" class="btn-back-home">
+                                <i class="fas fa-home"></i> Back to Home
+                            </a>
+                        </div>
+                        
+                        <div class="referral-box">
+                            <p>Know a colleague looking for a home? <a href="#" onclick="shareReferral()">Share this page</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -293,65 +610,209 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <h3>Edward Lopez <span>Doctor Loans</span></h3>
-                    <p>Arizona's trusted physician mortgage specialist helping doctors, residents, and medical professionals achieve homeownership with exclusive loan programs.</p>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    </div>
+                    <p>Arizona's trusted physician mortgage specialist helping doctors, residents, and medical professionals achieve homeownership.</p>
                 </div>
                 <div class="footer-links">
-                    <h4>Loan Programs</h4>
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="physician-mortgages.html">Physician Mortgages</a></li>
-                        <li><a href="physician-mortgages.html">Resident Loans</a></li>
-                        <li><a href="physician-mortgages.html">Fellow Loans</a></li>
-                        <li><a href="physician-mortgages.html">Attending Loans</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="physician-mortgages.html">FAQ</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="physician-mortgages.html">Loan Programs</a></li>
                         <li><a href="about-us.html">About Edward</a></li>
-                        <li><a href="contact-us.html">Contact</a></li>
-                        <li><a href="prequalify.html">Get Started</a></li>
+                        <li><a href="prequalify.html">Get Pre-Qualified</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
                     <h4>Contact</h4>
-                    <div class="footer-contact-card">
-                        <img src="edward-lopez.jpg" alt="Edward Lopez">
-                        <div class="footer-contact-info">
-                            <h5>Edward Lopez</h5>
-                            <p>NMLS #598677<br>(480) 555-0199</p>
-                        </div>
-                    </div>
+                    <p><i class="fas fa-phone"></i> (480) 555-0199</p>
+                    <p><i class="fas fa-envelope"></i> edward.lopez@bokfinancial.com</p>
+                    <p>NMLS #598677</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Edward Lopez Doctor Loans. All rights reserved.</p>
-                <p>NMLS #598677 | Arizona Mortgage Broker License</p>
-                <p><small>All loans subject to credit approval. Rates and terms subject to change without notice.</small></p>
-                <p><small>Designed by <a href="#">SevenCube</a></small></p>
+                <p>&copy; 2024 Edward Lopez Doctor Loans. NMLS #598677</p>
             </div>
         </div>
     </footer>
 
+    <script src="main.js"></script>
     <script>
+        // Stepper Logic
+        let currentStep = 1;
+        const totalSteps = 5;
+        
+        function updateProgress() {
+            const progressFill = document.getElementById('progressFill');
+            const progress = ((currentStep - 1) / (totalSteps - 1)) * 100;
+            progressFill.style.width = progress + '%';
+            
+            document.querySelectorAll('.step-dot').forEach((dot, index) => {
+                dot.classList.remove('active', 'completed');
+                if (index + 1 < currentStep) {
+                    dot.classList.add('completed');
+                } else if (index + 1 === currentStep) {
+                    dot.classList.add('active');
+                }
+            });
+        }
+        
+        function validateStep(step) {
+            const stepEl = document.querySelector(`.form-step[data-step="${step}"]`);
+            const requiredFields = stepEl.querySelectorAll('[required]');
+            let valid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value || (field.type === 'radio' && !stepEl.querySelector(`input[name="${field.name}"]:checked`))) {
+                    valid = false;
+                    field.classList.add('error');
+                    
+                    // For radio groups
+                    if (field.type === 'radio') {
+                        const radioGroup = stepEl.querySelectorAll(`input[name="${field.name}"]`);
+                        radioGroup.forEach(r => r.closest('.radio-card, .income-card, .purpose-card')?.classList.add('error'));
+                    }
+                } else {
+                    field.classList.remove('error');
+                }
+            });
+            
+            return valid;
+        }
+        
+        function nextStep() {
+            if (!validateStep(currentStep)) {
+                showValidationError();
+                return;
+            }
+            
+            if (currentStep < totalSteps) {
+                document.querySelector(`.form-step[data-step="${currentStep}"]`).classList.remove('active');
+                currentStep++;
+                document.querySelector(`.form-step[data-step="${currentStep}"]`).classList.add('active');
+                updateProgress();
+                
+                if (currentStep === 5) {
+                    populateReview();
+                }
+            }
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        function prevStep() {
+            if (currentStep > 1) {
+                document.querySelector(`.form-step[data-step="${currentStep}"]`).classList.remove('active');
+                currentStep--;
+                document.querySelector(`.form-step[data-step="${currentStep}"]`).classList.add('active');
+                updateProgress();
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        function goToStep(step) {
+            document.querySelector(`.form-step[data-step="${currentStep}"]`).classList.remove('active');
+            currentStep = step;
+            document.querySelector(`.form-step[data-step="${currentStep}"]`).classList.add('active');
+            updateProgress();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        function populateReview() {
+            const form = document.getElementById('prequalForm');
+            const formData = new FormData(form);
+            
+            document.getElementById('reviewName').textContent = (formData.get('firstName') || '') + ' ' + (formData.get('lastName') || '');
+            document.getElementById('reviewEmail').textContent = formData.get('email') || '-';
+            document.getElementById('reviewPhone').textContent = formData.get('phone') || '-';
+            
+            const professions = { 'md': 'Medical Doctor (MD)', 'do': 'Doctor of Osteopathic (DO)', 'dds-dmd': 'Dentist (DDS/DMD)', 'other': 'Other Medical Professional' };
+            document.getElementById('reviewProfession').textContent = professions[formData.get('profession')] || '-';
+            document.getElementById('reviewCareer').textContent = (formData.get('careerStage') || '').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+            document.getElementById('reviewEmployer').textContent = formData.get('employer') || 'Not provided';
+            document.getElementById('reviewIncome').textContent = (formData.get('annualIncome') || '').replace(/k/g, 'K').replace(/\+/g, '+') || '-';
+            document.getElementById('reviewDebts').textContent = '$' + (formData.get('monthlyDebts') || '0');
+            document.getElementById('reviewDownPayment').textContent = formData.get('downPayment') === '0' ? '$0 (100% financing)' : '$' + (formData.get('downPayment') || '0');
+            document.getElementById('reviewPurpose').textContent = formData.get('loanPurpose') === 'purchase' ? 'Buy a Home' : 'Refinance';
+            document.getElementById('reviewPrice').textContent = (formData.get('homePrice') || '').replace(/k/g, 'K').replace(/m/g, 'M') || '-';
+            document.getElementById('reviewTimeline').textContent = (formData.get('timeframe') || '').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) || '-';
+        }
+        
+        function showValidationError() {
+            const errorMsg = document.createElement('div');
+            errorMsg.className = 'validation-error';
+            errorMsg.innerHTML = '<i class="fas fa-exclamation-circle"></i> Please fill in all required fields';
+            errorMsg.style.cssText = 'background: #ffebee; color: #c62828; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center;';
+            
+            const stepEl = document.querySelector(`.form-step[data-step="${currentStep}"]`);
+            if (!stepEl.querySelector('.validation-error')) {
+                stepEl.insertBefore(errorMsg, stepEl.firstChild);
+                setTimeout(() => errorMsg.remove(), 3000);
+            }
+        }
+        
+        // Calculate estimated qualification
+        document.querySelectorAll('input[name="annualIncome"]').forEach(radio => {
+            radio.addEventListener('change', updateEstimation);
+        });
+        document.getElementById('monthlyDebts')?.addEventListener('change', updateEstimation);
+        
+        function updateEstimation() {
+            const income = document.querySelector('input[name="annualIncome"]:checked')?.value;
+            const debts = document.getElementById('monthlyDebts')?.value || '0';
+            
+            if (income) {
+                const incomeMap = { '50-100k': 75000, '100-150k': 125000, '150-200k': 175000, '200-250k': 225000, '250-300k': 275000, '300k+': 350000 };
+                const debtAmount = parseInt(debts) || 0;
+                const monthlyIncome = incomeMap[income] / 12;
+                const maxPayment = (monthlyIncome * 0.43) - debtAmount;
+                const homePrice = Math.round((maxPayment * 200) / 1000) * 1000;
+                
+                document.getElementById('estAmount').textContent = '$' + homePrice.toLocaleString();
+                document.getElementById('estQualification').style.display = 'flex';
+            }
+        }
+        
+        // Form submission
+        document.getElementById('prequalForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            
+            // Show success message
+            document.getElementById('successName').textContent = formData.get('firstName');
+            document.getElementById('successEmail').textContent = formData.get('email');
+            
+            document.querySelector('.stepper-form').style.display = 'none';
+            document.querySelector('.stepper-header').style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+            
+            // Track conversion
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead');
+            }
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'conversion', { 'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL' });
+            }
+        });
+        
+        function shareReferral() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Physician Mortgage Loans in Arizona',
+                    text: 'Edward Lopez helped me with my physician mortgage. Check him out!',
+                    url: window.location.origin
+                });
+            } else {
+                alert('Copy this link to share: ' + window.location.origin);
+            }
+        }
+        
+        // Initialize
+        updateProgress();
+        
+        // Mobile menu toggle
         function toggleMenu() {
             document.getElementById('mainNav').classList.toggle('active');
         }
-        
-        document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
-            toggle.addEventListener('click', function(e) {
-                if (window.innerWidth <= 768) {
-                    e.preventDefault();
-                    this.parentElement.classList.toggle('active');
-                }
-            });
-        });
     </script>
-<script src="main.js"></script>
 </body>
 </html>
