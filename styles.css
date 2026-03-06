@@ -405,36 +405,25 @@ body {
     justify-content: center;
 }
 
-.placeholder-image {
+.loan-officer-photo,
+.bio-photo {
     width: 280px;
     height: 350px;
-    background: var(--bg-light);
+    object-fit: cover;
     border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-light);
-    border: 2px dashed var(--border-color);
+    box-shadow: var(--shadow);
 }
 
-.placeholder-image span {
-    font-size: 4rem;
-    margin-bottom: 10px;
-}
-
-.placeholder-image.large {
+.bio-photo {
     width: 320px;
     height: 400px;
 }
 
-.placeholder-image.small {
+.mini-photo-img {
     width: 80px;
     height: 80px;
-}
-
-.placeholder-image.small span {
-    font-size: 2rem;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .loan-officer-info h2 {
