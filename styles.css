@@ -1797,12 +1797,14 @@ body {
     height: fit-content;
 }
 
+/* Benefits Card - Light Theme */
 .benefits-card {
-    background: linear-gradient(135deg, var(--primary-dark), var(--secondary));
-    color: var(--white);
+    background: var(--white);
+    color: var(--primary-dark);
     padding: 35px;
     border-radius: 12px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
 }
 
 .benefits-card h3 {
@@ -1811,6 +1813,7 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
+    color: var(--primary-dark);
 }
 
 .benefits-card h3 i {
@@ -1829,15 +1832,17 @@ body {
     gap: 12px;
     font-size: 14px;
     line-height: 1.5;
+    color: var(--text-gray);
 }
 
 .benefits-list li i {
     color: #4caf50;
     margin-top: 3px;
+    flex-shrink: 0;
 }
 
 .trust-badge {
-    background: rgba(255,255,255,0.1);
+    background: var(--bg-light);
     padding: 20px;
     border-radius: 8px;
     display: flex;
@@ -1848,22 +1853,23 @@ body {
 
 .trust-badge i {
     font-size: 28px;
-    color: #4caf50;
+    color: var(--accent-red);
 }
 
 .trust-badge strong {
     display: block;
     font-size: 14px;
     margin-bottom: 3px;
+    color: var(--primary-dark);
 }
 
 .trust-badge span {
     font-size: 12px;
-    opacity: 0.8;
+    color: var(--text-gray);
 }
 
 .testimonial-mini {
-    background: rgba(255,255,255,0.1);
+    background: var(--bg-light);
     padding: 20px;
     border-radius: 8px;
     border-left: 3px solid var(--accent-red);
@@ -1874,16 +1880,18 @@ body {
     font-style: italic;
     margin-bottom: 15px;
     line-height: 1.6;
+    color: var(--text-gray);
 }
 
 .testimonial-author strong {
     display: block;
     font-size: 14px;
+    color: var(--primary-dark);
 }
 
 .testimonial-author span {
     font-size: 12px;
-    opacity: 0.8;
+    color: var(--text-gray);
 }
 
 /* Stepper Form Wrapper */
