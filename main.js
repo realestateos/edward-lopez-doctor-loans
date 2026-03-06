@@ -1,4 +1,4 @@
-// Texas Doctor Loans - Main JavaScript
+// Arizona Doctor Loans - Main JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile Menu Toggle
