@@ -302,11 +302,11 @@ body {
 
 /* Feature List */
 .feature-list {
-    background: rgba(255,255,255,0.1);
+    background: rgba(30, 55, 108, 0.85);
     backdrop-filter: blur(10px);
     padding: 35px;
     border-radius: 8px;
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
 }
 
 .feature-list h3 {
@@ -325,7 +325,8 @@ body {
     padding-left: 30px;
     position: relative;
     font-size: 15px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    color: var(--white);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
 .feature-list li:last-child {
