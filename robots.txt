@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://edwardlopezdoctorsloans.com/sitemap.xml
+Sitemap: https://edward-lopez-doctor-loans.pages.dev/sitemap.xml
