@@ -287,6 +287,30 @@
         </div>
     </section>
 
+    <!-- Trust Badges Section -->
+    <section style="background: #f8f9fa; padding: 30px 0; border-bottom: 1px solid #e5e7eb;">
+        <div class="container">
+            <div style="display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; opacity: 0.7;">
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--text-gray);">
+                    <i class="fas fa-shield-alt" style="color: var(--accent-red); font-size: 20px;"></i>
+                    <span>NMLS Licensed</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--text-gray);">
+                    <i class="fas fa-check-circle" style="color: var(--accent-red); font-size: 20px;"></i>
+                    <span>BBB A+ Rated</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--text-gray);">
+                    <i class="fas fa-lock" style="color: var(--accent-red); font-size: 20px;"></i>
+                    <span>256-bit SSL Secure</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--text-gray);">
+                    <i class="fas fa-star" style="color: var(--accent-red); font-size: 20px;"></i>
+                    <span>5-Star Google Reviews</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Mortgage Cards Section -->
     <section class="section">
         <div class="container">
@@ -316,6 +340,57 @@
                         <p style="font-size: 14px; margin-top: 5px;">Up to $2M Loan Amount • 100% Financing Available</p>
                     </div>
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table Section -->
+    <section class="section section-light">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <span style="color: var(--accent-red); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Why Choose a Physician Mortgage?</span>
+                <h2 style="color: var(--primary-dark); font-size: 32px; font-weight: 300; margin-top: 10px;">Physician Loan vs. Conventional Loan</h2>
+            </div>
+            <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.1);">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background: var(--primary-dark); color: white;">
+                            <th style="padding: 20px; text-align: left; font-weight: 600;">Feature</th>
+                            <th style="padding: 20px; text-align: center; font-weight: 600; background: var(--accent-red);">Physician Mortgage</th>
+                            <th style="padding: 20px; text-align: center; font-weight: 600;">Conventional Loan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 20px; font-weight: 500;">Down Payment</td>
+                            <td style="padding: 20px; text-align: center; color: var(--accent-red); font-weight: 600;">✓ 0% - 10%</td>
+                            <td style="padding: 20px; text-align: center; color: #999;">✗ 20% required</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 20px; font-weight: 500;">PMI (Mortgage Insurance)</td>
+                            <td style="padding: 20px; text-align: center; color: var(--accent-red); font-weight: 600;">✓ Never required</td>
+                            <td style="padding: 20px; text-align: center; color: #999;">✗ $200-500/month</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 20px; font-weight: 500;">Student Loans</td>
+                            <td style="padding: 20px; text-align: center; color: var(--accent-red); font-weight: 600;">✓ Excluded from DTI</td>
+                            <td style="padding: 20px; text-align: center; color: #999;">✗ Full debt counted</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 20px; font-weight: 500;">Employment History</td>
+                            <td style="padding: 20px; text-align: center; color: var(--accent-red); font-weight: 600;">✓ Future contract OK</td>
+                            <td style="padding: 20px; text-align: center; color: #999;">✗ 2 years required</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 20px; font-weight: 500;">Loan Limits</td>
+                            <td style="padding: 20px; text-align: center; color: var(--accent-red); font-weight: 600;">✓ Up to $2.25M</td>
+                            <td style="padding: 20px; text-align: center; color: #999;">✗ $726,200 max</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="prequalify.html" class="hero-cta" onclick="gtag('event', 'conversion', {'send_to': 'AW-CONVERSION_ID/COMPARISON_CTA'});">Get Pre-Approved Now →</a>
             </div>
         </div>
     </section>
@@ -548,6 +623,40 @@
         </div>
     </footer>
 
+    <!-- Exit Intent Popup -->
+    <div id="exitPopup" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); z-index: 9999; justify-content: center; align-items: center;">
+        <div style="background: white; padding: 40px; border-radius: 16px; max-width: 500px; text-align: center; position: relative; animation: slideIn 0.3s ease;">
+            <button onclick="closeExitPopup()" style="position: absolute; top: 15px; right: 15px; background: none; border: none; font-size: 24px; cursor: pointer; color: #999;">&times;</button>
+            <div style="font-size: 48px; margin-bottom: 15px;">🎁</div>
+            <h3 style="color: var(--primary-dark); font-size: 24px; margin-bottom: 10px;">Wait! Get Your Free Rate Quote</h3>
+            <p style="color: var(--text-gray); margin-bottom: 25px; font-size: 16px;">Join 500+ Arizona physicians who saved thousands. Takes 2 minutes, no credit check.</p>
+            <a href="prequalify.html" class="hero-cta" style="display: block; margin-bottom: 15px;" onclick="gtag('event', 'conversion', {'send_to': 'AW-CONVERSION_ID/EXIT_POPUP'});">Get Pre-Approved Now →</a>
+            <p style="font-size: 13px; color: #999;">🔒 Your information is 100% secure</p>
+        </div>
+    </div>
+    <style>
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+
+    <!-- Floating CTA for Mobile -->
+    <div class="floating-cta-mobile" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background: white; padding: 12px 20px; box-shadow: 0 -4px 20px rgba(0,0,0,0.15); z-index: 999; justify-content: space-between; align-items: center; gap: 10px;">
+        <a href="tel:4805550199" style="background: var(--accent-red); color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; flex: 1; text-align: center;">
+            <i class="fas fa-phone"></i> Call Now
+        </a>
+        <a href="prequalify.html" style="background: var(--primary-dark); color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; flex: 1; text-align: center;" onclick="gtag('event', 'conversion', {'send_to': 'AW-CONVERSION_ID/FLOATING_CTA'});">
+            Apply Now
+        </a>
+    </div>
+    <style>
+        @media (max-width: 768px) {
+            .floating-cta-mobile { display: flex !important; }
+            body { padding-bottom: 70px; }
+        }
+    </style>
+
     <script>
         function toggleMenu() {
             document.getElementById('mainNav').classList.toggle('active');
@@ -562,6 +671,40 @@
                 }
             });
         });
+        
+        // Exit Intent Detection
+        let exitIntentShown = false;
+        document.addEventListener('mouseout', function(e) {
+            if (e.clientY < 10 && !exitIntentShown && !window.location.href.includes('prequalify')) {
+                document.getElementById('exitPopup').style.display = 'flex';
+                exitIntentShown = true;
+                gtag('event', 'exit_intent_triggered');
+            }
+        });
+        
+        function closeExitPopup() {
+            document.getElementById('exitPopup').style.display = 'none';
+        }
+        
+        // Close popup on outside click
+        document.getElementById('exitPopup').addEventListener('click', function(e) {
+            if (e.target === this) closeExitPopup();
+        });
+        
+        // Scroll depth tracking for GA
+        let scroll25 = false, scroll50 = false, scroll75 = false, scroll90 = false;
+        window.addEventListener('scroll', function() {
+            let scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            if (scrollPercent > 25 && !scroll25) { gtag('event', 'scroll_depth', {'percent': 25}); scroll25 = true; }
+            if (scrollPercent > 50 && !scroll50) { gtag('event', 'scroll_depth', {'percent': 50}); scroll50 = true; }
+            if (scrollPercent > 75 && !scroll75) { gtag('event', 'scroll_depth', {'percent': 75}); scroll75 = true; }
+            if (scrollPercent > 90 && !scroll90) { gtag('event', 'scroll_depth', {'percent': 90}); scroll90 = true; }
+        });
+        
+        // Time on page tracking
+        setTimeout(function() { gtag('event', 'time_on_page', {'duration': '30_seconds'}); }, 30000);
+        setTimeout(function() { gtag('event', 'time_on_page', {'duration': '60_seconds'}); }, 60000);
+        setTimeout(function() { gtag('event', 'time_on_page', {'duration': '2_minutes'}); }, 120000);
     </script>
 <script src="main.js"></script>
 </body>
