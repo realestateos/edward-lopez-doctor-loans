@@ -128,22 +128,24 @@
         
         /* Stepper */
         .stepper-header {
-            margin-bottom: 50px;
+            margin-bottom: 60px;
+            padding-top: 10px;
         }
         
         .stepper-progress {
             display: flex;
             justify-content: space-between;
+            align-items: flex-start;
             position: relative;
-            margin-bottom: 30px;
+            padding: 0 16px;
         }
         
         .stepper-progress::before {
             content: '';
             position: absolute;
-            top: 15px;
-            left: 0;
-            right: 0;
+            top: 16px;
+            left: 32px;
+            right: 32px;
             height: 3px;
             background: #e5e7eb;
             z-index: 0;
@@ -151,8 +153,8 @@
         
         .stepper-progress-bar {
             position: absolute;
-            top: 15px;
-            left: 0;
+            top: 16px;
+            left: 32px;
             height: 3px;
             background: #1e376c;
             transition: width 0.3s ease;
@@ -160,8 +162,8 @@
         }
         
         .step-dot {
-            width: 32px;
-            height: 32px;
+            width: 34px;
+            height: 34px;
             border-radius: 50%;
             background: white;
             border: 3px solid #e5e7eb;
@@ -174,6 +176,7 @@
             position: relative;
             z-index: 2;
             transition: all 0.3s ease;
+            flex-shrink: 0;
         }
         
         .step-dot.active {
@@ -190,12 +193,14 @@
         
         .step-label {
             position: absolute;
-            top: 40px;
+            top: 42px;
             left: 50%;
             transform: translateX(-50%);
             font-size: 0.75rem;
             color: #6b7280;
             white-space: nowrap;
+            text-align: center;
+            width: 60px;
         }
         
         /* Form Steps */
@@ -605,24 +610,36 @@
         
         @media (max-width: 640px) {
             .stepper-header {
+                padding: 10px 5px 0;
+                margin-bottom: 50px;
+            }
+            
+            .stepper-progress {
                 padding: 0 10px;
-                margin-bottom: 45px;
+            }
+            
+            .stepper-progress::before {
+                left: 20px;
+                right: 20px;
+                top: 14px;
+            }
+            
+            .stepper-progress-bar {
+                left: 20px;
+                top: 14px;
             }
             
             .step-dot {
-                width: 32px;
-                height: 32px;
-                font-size: 0.8rem;
+                width: 28px;
+                height: 28px;
+                font-size: 0.75rem;
+                border-width: 2px;
             }
             
             .step-label {
-                font-size: 0.7rem;
-                top: 42px;
-            }
-            
-            .stepper-progress::before,
-            .stepper-progress-bar {
-                top: 15px;
+                font-size: 0.65rem;
+                top: 36px;
+                width: 50px;
             }
         }
     </style>
@@ -1022,9 +1039,18 @@
         const totalSteps = 5;
         
         function updateStepper() {
-            // Update progress bar using simple percentage
-            const progress = ((currentStep - 1) / (totalSteps - 1)) * 100;
-            document.getElementById('progressBar').style.width = progress + '%';
+            // Update progress bar - use percentage based on step position
+            const progressPercent = ((currentStep - 1) / (totalSteps - 1)) * 100;
+            // Get the actual pixel width of the progress track (between first and last dot centers)
+            const stepperProgress = document.querySelector('.stepper-progress');
+            const stepperRect = stepperProgress.getBoundingClientRect();
+            const firstDot = stepperProgress.querySelector('.step-dot');
+            const lastDot = stepperProgress.querySelector('.step-dot:last-child');
+            const firstRect = firstDot.getBoundingClientRect();
+            const lastRect = lastDot.getBoundingClientRect();
+            const trackWidth = lastRect.left - firstRect.left;
+            const progressPixels = (progressPercent / 100) * trackWidth;
+            document.getElementById('progressBar').style.width = Math.max(0, progressPixels) + 'px';
             
             // Update step dots
             document.querySelectorAll('.step-dot').forEach((dot, index) => {
