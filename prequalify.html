@@ -128,8 +128,8 @@
         
         /* Stepper */
         .stepper-header {
-            margin-bottom: 50px;
-            padding: 0 20px;
+            margin-bottom: 60px;
+            padding: 0 10px;
         }
         
         .stepper-progress {
@@ -137,15 +137,15 @@
             justify-content: space-between;
             position: relative;
             margin-bottom: 10px;
-            padding: 0 10px;
+            padding: 0 19px;
         }
         
         .stepper-progress::before {
             content: '';
             position: absolute;
             top: 18px;
-            left: 30px;
-            right: 30px;
+            left: 38px;
+            right: 38px;
             height: 3px;
             background: #e5e7eb;
             z-index: 0;
@@ -154,7 +154,7 @@
         .stepper-progress-bar {
             position: absolute;
             top: 18px;
-            left: 30px;
+            left: 38px;
             height: 3px;
             background: #1e376c;
             transition: width 0.3s ease;
@@ -1027,11 +1027,11 @@
         const totalSteps = 5;
         
         function updateStepper() {
-            // Update progress bar - account for the 30px offset on each side
-            const containerWidth = document.querySelector('.stepper-progress').offsetWidth - 60;
-            const stepWidth = containerWidth / (totalSteps - 1);
-            const progress = (currentStep - 1) * stepWidth;
-            document.getElementById('progressBar').style.width = progress + 'px';
+            // Update progress bar - calculate based on percentage between dots
+            const progressPercent = ((currentStep - 1) / (totalSteps - 1)) * 100;
+            const containerWidth = document.querySelector('.stepper-progress').offsetWidth - 76; // 38px padding each side
+            const progressPixels = (progressPercent / 100) * containerWidth;
+            document.getElementById('progressBar').style.width = progressPixels + 'px';
             
             // Update step dots
             document.querySelectorAll('.step-dot').forEach((dot, index) => {
