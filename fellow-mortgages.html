@@ -3,24 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mortgages for Fellows Arizona | Doctor Home Loans for Medical Fellows</title>
-    <meta name="description" content="Physician mortgage loans for medical fellows in Arizona. 0% down, no PMI, qualify with fellowship contract. Edward Lopez NMLS 598677.">
+    <title>Mortgages for Fellows Arizona | Doctor Home Loans for Medical Fellows | 0% Down</title>
+    <meta name="description" content="Physician mortgage loans for medical fellows in Arizona. 0% down, no PMI, qualify with fellowship contract. Edward Lopez NMLS 598677 at BOK Financial.">
+    <meta name="keywords" content="fellow mortgage Arizona, medical fellow home loan, doctor mortgage fellowship, physician loan fellow, Arizona fellow doctor loan">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, #1a2d5a 100%);
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: url('doctor-team.jpg') center/cover;
+            opacity: 0.3;
+        }
+        .page-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+        }
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .benefit-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+        .benefit-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--primary-dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 28px;
+        }
+        .process-step {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            align-items: flex-start;
+        }
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--accent-red);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 15px 20px;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            z-index: 1000;
+        }
+        @media (min-width: 769px) {
+            .sticky-cta { display: none; }
+        }
+    </style>
 </head>
 <body>
     <!-- Top Bar -->
     <div class="top-bar">
         <div class="container">
             <div class="top-bar-left">
-                Home Loans for Physicians & Advanced Medical Professionals in AZ
+                <i class="fas fa-phone"></i> (480) 555-0199 | Home Loans for Physicians in AZ
             </div>
             <div class="top-bar-right">
-                <a href="tel:4805550199"><i class="fas fa-phone-square"></i> (480) 555-0199</a>
-                <a href="mailto:edward.lopez@bokfinancial.com"><i class="fas fa-envelope"></i> edward.lopez@bokfinancial.com</a>
+                <a href="tel:4805550199">Call Now</a>
             </div>
         </div>
     </div>
@@ -47,16 +134,9 @@
                             <a href="attending-mortgages.html">Attending Physician Mortgages</a>
                         </div>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Resources</a>
-                        <div class="dropdown-menu">
-                            <a href="https://www.bokfinancial.com/resources/calculators/home-loans/how-much-house-can-i-afford" target="_blank">How much home can I afford?</a>
-                            <a href="#faq">Frequently Asked Questions</a>
-                        </div>
-                    </li>
                     <li><a href="prequalify.html">Can I Qualify?</a></li>
                     <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
                     <li><a href="prequalify.html" class="btn-cta">Get Started</a></li>
                 </ul>
             </nav>
@@ -64,88 +144,15 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="section section-light" style="padding: 80px 0 40px;">
+    <section class="page-hero">
         <div class="container">
-            <div style="max-width: 900px; margin: 0 auto;">
-                <span style="color: var(--accent-red); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px;">Created with fellows in mind</span>
-                <h1 style="color: var(--primary-dark); font-size: 36px; font-weight: 400; margin: 0 0 30px; line-height: 1.3;">A mortgage specifically designed for you</h1>
-                <p style="font-size: 17px; line-height: 1.8; color: var(--text-gray); margin-bottom: 20px;">As a fellow, once you've completed your residency and chosen a specialty you have a unique borrower profile from the mortgage lender's perspective. Whether you have to move across the country, or you're in limbo while your contract finalized — it can be overwhelming to find a place to live. This is where we come in, we understand the hurdles that you face as a physician when applying for home financing, we work with your individual circumstances and scenario to get you into your dream home. Our physician mortgage programs were developed for your unique situation as a fellow and borrower profile.</p>
-                <p style="font-size: 17px; line-height: 1.8; color: var(--text-gray);">Our unique mortgage products can take your future income into consideration just by using your contract. Let's say you've gotten a contract with an employment start date of 60 days from now, we'll work with you to leverage that future income as part of your home loan application to increase your odds of approval.</p>
-                <p style="font-size: 17px; line-height: 1.8; color: var(--text-gray); margin-top: 20px;">Along with future income consideration, we offer these special terms such as zero downpayment and student loan consideration are offered to all doctors from residents to fellows, and attendings and more.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Image Section -->
-    <section class="section" style="padding: 0 0 40px;">
-        <div class="container">
-            <img src="doctor-team.jpg" alt="Medical Fellows" style="width: 100%; max-width: 900px; height: 500px; object-fit: cover; display: block; margin: 0 auto;">
-        </div>
-    </section>
-
-    <!-- Why Us Section -->
-    <section class="section">
-        <div class="container">
-            <div style="max-width: 900px; margin: 0 auto;">
-                <span style="color: var(--accent-red); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px;">Why Us?</span>
-                <h2 style="color: var(--primary-dark); font-size: 32px; font-weight: 400; margin: 0 0 25px;">BOK Financial and Edward Lopez</h2>
-                <p style="font-size: 17px; line-height: 1.8; color: var(--text-gray);">From the time you apply for your physician home mortgage loan, until the day you close and get the keys to your new home, our specially trained and experienced staff manages and oversees the entire loan process. Your loan officer, Edward Lopez, has been specializing in physician lending since 2010.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section class="section section-light">
-        <div class="container">
-            <div style="max-width: 900px; margin: 0 auto;">
-                <span style="color: var(--accent-red); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px;">How's it work?</span>
-                <h2 style="color: var(--primary-dark); font-size: 32px; font-weight: 400; margin: 0 0 40px;">The mortgage process for fellows</h2>
-                
-                <div style="margin-bottom: 40px;">
-                    <h3 style="color: var(--primary-dark); font-size: 22px; margin: 0 0 15px;">Pre-Qualify</h3>
-                    <p style="font-size: 16px; line-height: 1.7; color: var(--text-gray); margin: 0;">Medical residents, fellows, practicing physicians, and dentists with employment contracts. US Citizens, Permanent Resident Aliens, and Non-Permanent Resident Aliens.</p>
-                </div>
-                
-                <div style="margin-bottom: 40px;">
-                    <h3 style="color: var(--primary-dark); font-size: 22px; margin: 0 0 15px;">Mortgage Loan Approval</h3>
-                    <p style="font-size: 16px; line-height: 1.7; color: var(--text-gray); margin: 0;">100% financing up to $750,000 loan amount with no PMI. 95% financing up to $1,500,000 loan amount. Single-family homes and townhomes allowed. Condominiums allowed but must meet warrantable guidelines per Fannie Mae.</p>
-                </div>
-                
-                <div>
-                    <h3 style="color: var(--primary-dark); font-size: 22px; margin: 0 0 15px;">Close & Move In</h3>
-                    <p style="font-size: 16px; line-height: 1.7; color: var(--text-gray); margin: 0;">Your trusted loan officer Edward Lopez working in tandem with your real estate agent will help you throughout your journey to homeownership and financing. We offer quick close, typically within 45 days.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="section" id="faq">
-        <div class="container">
-            <div style="max-width: 900px; margin: 0 auto;">
-                <span style="color: var(--accent-red); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px;">About our doctor based mortgage programs</span>
-                <h2 style="color: var(--primary-dark); font-size: 32px; font-weight: 400; margin: 0 0 30px;">Frequently Asked Questions</h2>
-                
-                <p style="font-size: 16px; line-height: 1.7; color: var(--text-gray); margin-bottom: 20px;">A "qualified borrower" is typically a medical resident, fellow or attending physician with a signed contract for employment.</p>
-                
-                <p style="font-size: 16px; font-weight: 600; color: var(--primary-dark); margin: 0 0 10px;">Including:</p>
-                <ul style="margin: 0 0 25px 20px; padding: 0; line-height: 2; color: var(--text-gray);">
-                    <li>Physicians (MD, DO, DP)</li>
-                    <li>Medical Residents or Fellows in MD, DO or DP programs</li>
-                    <li>Dentists (DDS and DMD)</li>
-                </ul>
-                
-                <p style="font-size: 16px; line-height: 1.7; color: var(--text-gray); margin-bottom: 25px;">While we can facilitate a doctor mortgage nationwide, we typically deal with borrowers in the Phoenix, Scottsdale, Mesa, and Tempe metro areas. We can lend all over the state of Arizona though as well as our bank footprint states. Those states include AZ, OK, CO, TX, AR, KS, MO, NM.</p>
-                
-                <p style="font-size: 16px; line-height: 1.7; color: var(--text-gray); margin-bottom: 25px;">This program allows for up to 100% financing, competitive pricing and unique qualifying criteria based on various loan products. No down payment required.</p>
-                
-                <p style="font-size: 16px; font-weight: 600; color: var(--primary-dark); margin: 0 0 10px;">Loan to Value Details:</p>
-                <ul style="margin: 0 0 25px 20px; padding: 0; line-height: 2; color: var(--text-gray);">
-                    <li>100% financing up to a $1,500,000 loan amount with a minimum of a 700 credit score</li>
-                    <li>95% financing up to a $1,750,000 loan amount with a minimum of a 700 credit score</li>
-                    <li>90% financing up to a $2,000,000 loan amount with a minimum of a 700 credit score</li>
-                    <li>85% financing up to a $2,250,000 loan amount with a minimum of a 700 credit score</li>
-                </ul>
+            <div class="page-hero-content">
+                <span style="color: var(--accent-red); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px;">🏥 Created with fellows in mind</span>
+                <h1 style="color: white; font-size: 42px; font-weight: 300; margin: 0 0 20px; line-height: 1.2;">Fellow Mortgage Arizona:<br>Secure Your Dream Home</h1>
+                <p style="color: rgba(255,255,255,0.9); font-size: 18px; line-height: 1.7; margin-bottom: 30px;">✓ Future Income Considered<br>✓ 100% Financing Available<br>✓ No PMI Required<br>✓ Close in 45 Days</p>
+                <a href="prequalify.html" class="hero-cta" style="font-size: 18px; padding: 18px 40px;">
+                    <i class="fas fa-rocket"></i> Get Pre-Approved Now
+                </a>
             </div>
         </div>
     </section>
@@ -153,34 +160,204 @@
     <!-- Benefits Section -->
     <section class="section section-light">
         <div class="container">
-            <div style="max-width: 900px; margin: 0 auto;">
-                <span style="color: var(--accent-red); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px;">Specialized Mortgage Guidelines</span>
-                <h2 style="color: var(--primary-dark); font-size: 32px; font-weight: 400; margin: 0 0 40px;">Physician & Advanced Medical Professional Mortgages Benefits</h2>
-                
-                <div style="margin-bottom: 35px;">
-                    <h3 style="color: var(--primary-dark); font-size: 20px; margin: 0 0 12px;">Leverage a newly signed contract</h3>
-                    <p style="font-size: 16px; line-height: 1.7; color: var(--text-gray); margin: 0;">We look at your future income vs your past income. Typical mortgages require the average of your last 2 years of employment and use that as your basis. However, we understand that often times a new or recent contract provides you with a higher income level and it's rather secure so we can even get your approved for financing before you've begun working at a new location.</p>
+            <div style="text-align: center; margin-bottom: 50px;">
+                <span style="color: var(--accent-red); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Why Choose Us</span>
+                <h2 style="color: var(--primary-dark); font-size: 32px; font-weight: 300; margin-top: 10px;">Fellow Mortgage Benefits</h2>
+            </div>
+            <div class="benefit-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-calendar-check"></i></div>
+                    <h3 style="color: var(--primary-dark); margin-bottom: 10px;">Future Income</h3>
+                    <p style="color: var(--text-gray); font-size: 15px;">Use your upcoming employment contract to qualify before you start working.</p>
                 </div>
-                
-                <div style="margin-bottom: 35px;">
-                    <h3 style="color: var(--primary-dark); font-size: 20px; margin: 0 0 12px;">Zero Downpayment</h3>
-                    <p style="font-size: 16px; line-height: 1.7; color: var(--text-gray); margin: 0;">Physician mortgages require very little to no downpayment. This means you can get into a home for a lot less money than it would take other types of borrowers. The extra savings helps put you in a beneficial position so that you don't have to deplete your savings just to move into your new home.</p>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-home"></i></div>
+                    <h3 style="color: var(--primary-dark); margin-bottom: 10px;">Zero Down</h3>
+                    <p style="color: var(--text-gray); font-size: 15px;">100% financing available. Keep your savings for moving and emergencies.</p>
                 </div>
-                
-                <div>
-                    <h3 style="color: var(--primary-dark); font-size: 20px; margin: 0 0 12px;">Student Loan Consideration</h3>
-                    <p style="font-size: 16px; line-height: 1.7; color: var(--text-gray); margin: 0;">Student loans are often a barrier because they create a high debt to income ratio, our physician-based mortgage programs can factor those out of the equation allowing you to qualify for a larger mortgage amount.</p>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 style="color: var(--primary-dark); margin-bottom: 10px;">No PMI</h3>
+                    <p style="color: var(--text-gray); font-size: 15px;">Save hundreds monthly without private mortgage insurance.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-bolt"></i></div>
+                    <h3 style="color: var(--primary-dark); margin-bottom: 10px;">Quick Close</h3>
+                    <p style="color: var(--text-gray); font-size: 15px;">Close in as little as 45 days. Move into your new home fast.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="section section-dark">
+    <!-- Image Section -->
+    <section class="section" style="padding: 0;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; min-height: 500px;">
+            <img src="doctor-team.jpg" alt="Medical Fellows Buying Home in Arizona" style="width: 100%; height: 100%; object-fit: cover;">
+            <div style="background: var(--primary-dark); padding: 60px; display: flex; flex-direction: column; justify-content: center;">
+                <span style="color: var(--accent-red); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px;">For Medical Fellows</span>
+                <h2 style="color: white; font-size: 32px; font-weight: 300; margin: 0 0 25px;">Bridge Your Fellowship to Your New Home</h2>
+                <p style="color: rgba(255,255,255,0.9); font-size: 17px; line-height: 1.8; margin-bottom: 25px;">Our unique mortgage products can take your future income into consideration just by using your contract. Let's say you've gotten a contract with an employment start date of 60 days from now — we'll work with you to leverage that future income as part of your home loan application.</p>
+                <ul style="color: rgba(255,255,255,0.9); line-height: 2; margin-bottom: 30px;">
+                    <li><i class="fas fa-check" style="color: var(--accent-red); margin-right: 10px;"></i>All Fellowship Specialties</li>
+                    <li><i class="fas fa-check" style="color: var(--accent-red); margin-right: 10px;"></i>Employment Contract Accepted</li>
+                    <li><i class="fas fa-check" style="color: var(--accent-red); margin-right: 10px;"></i>Student Loans Deferred</li>
+                    <li><i class="fas fa-check" style="color: var(--accent-red); margin-right: 10px;"></i>Close Before Starting</li>
+                </ul>
+                <a href="prequalify.html" class="hero-cta" style="align-self: flex-start;">See If You Qualify →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                <div>
+                    <span style="color: var(--accent-red); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px;">Why Us?</span>
+                    <h2 style="color: var(--primary-dark); font-size: 32px; font-weight: 300; margin: 0 0 25px;">BOK Financial & Edward Lopez</h2>
+                    <p style="font-size: 17px; line-height: 1.8; color: var(--text-gray); margin-bottom: 20px;">From the time you apply for your physician home mortgage loan, until the day you close and get the keys to your new home, our specially trained and experienced staff manages and oversees the entire loan process.</p>
+                    <p style="font-size: 17px; line-height: 1.8; color: var(--text-gray);">Your loan officer, Edward Lopez, has been specializing in physician lending for Arizona medical professionals since 2010.</p>
+                    <div style="margin-top: 30px; display: flex; gap: 30px;">
+                        <div>
+                            <div style="font-size: 36px; font-weight: 700; color: var(--primary-dark);">500+</div>
+                            <div style="color: var(--text-gray); font-size: 14px;">Physicians Helped</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 36px; font-weight: 700; color: var(--primary-dark);">24hrs</div>
+                            <div style="color: var(--text-gray); font-size: 14px;">Pre-Approval</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 36px; font-weight: 700; color: var(--primary-dark);">5.0★</div>
+                            <div style="color: var(--text-gray); font-size: 14px;">Rating</div>
+                        </div>
+                    </div>
+                </div>
+                <img src="edward-lopez.jpg" alt="Edward Lopez - Arizona Physician Mortgage Specialist" style="width: 100%; border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.15);">
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section section-light">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <span style="color: var(--accent-red); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">How's it work?</span>
+                <h2 style="color: var(--primary-dark); font-size: 32px; font-weight: 300; margin-top: 10px;">The Mortgage Process for Fellows</h2>
+            </div>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div>
+                        <h3 style="color: var(--primary-dark); font-size: 22px; margin: 0 0 10px;">Pre-Qualify</h3>
+                        <p style="font-size: 16px; line-height: 1.7; color: var(--text-gray); margin: 0;">Complete our simple online application in 5 minutes. Submit your fellowship contract and future employment agreement. No impact on your credit score.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div>
+                        <h3 style="color: var(--primary-dark); font-size: 22px; margin: 0 0 10px;">Mortgage Loan Approval</h3>
+                        <p style="font-size: 16px; line-height: 1.7; color: var(--text-gray); margin: 0;">100% financing up to $750,000 with no PMI. 95% financing up to $1,500,000. We use your future income to qualify you today.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div>
+                        <h3 style="color: var(--primary-dark); font-size: 22px; margin: 0 0 10px;">Close & Move In</h3>
+                        <p style="font-size: 16px; line-height: 1.7; color: var(--text-gray); margin: 0;">Quick close typically within 45 days. Move into your new home before starting your attending position.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Detail Section -->
+    <section class="section">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <span style="color: var(--accent-red); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Specialized Mortgage Guidelines</span>
+                <h2 style="color: var(--primary-dark); font-size: 32px; font-weight: 300; margin-top: 10px;">Physician Mortgage Benefits</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                <div>
+                    <h3 style="color: var(--primary-dark); font-size: 20px; margin-bottom: 15px;"><i class="fas fa-chart-line" style="color: var(--accent-red); margin-right: 10px;"></i>Leverage a Newly Signed Contract</h3>
+                    <p style="color: var(--text-gray); line-height: 1.7;">We look at your future income vs your past income. Typical mortgages require the average of your last 2 years of employment. However, we understand that a new contract provides you with a higher income level and it's rather secure so we can get you approved before you've begun working.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--primary-dark); font-size: 20px; margin-bottom: 15px;"><i class="fas fa-dollar-sign" style="color: var(--accent-red); margin-right: 10px;"></i>Zero Downpayment</h3>
+                    <p style="color: var(--text-gray); line-height: 1.7;">Physician mortgages require very little to no downpayment. This means you can get into a home for a lot less money than it would take other types of borrowers. The extra savings helps put you in a beneficial position.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--primary-dark); font-size: 20px; margin-bottom: 15px;"><i class="fas fa-graduation-cap" style="color: var(--accent-red); margin-right: 10px;"></i>Student Loan Consideration</h3>
+                    <p style="color: var(--text-gray); line-height: 1.7;">Student loans are often a barrier because they create a high debt to income ratio. Our physician-based mortgage programs can factor those out of the equation allowing you to qualify for a larger mortgage amount.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-light" id="faq">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px;">
+                <div>
+                    <span style="color: var(--accent-red); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px;">About Our Programs</span>
+                    <h2 style="color: var(--primary-dark); font-size: 32px; font-weight: 300; margin: 0 0 30px;">Frequently Asked Questions</h2>
+                    
+                    <p style="font-size: 16px; line-height: 1.7; color: var(--text-gray); margin-bottom: 20px;">A "qualified borrower" is typically a medical resident, fellow or attending physician with a signed contract for employment.</p>
+                    
+                    <p style="font-size: 16px; font-weight: 600; color: var(--primary-dark); margin: 0 0 10px;">Including:</p>
+                    <ul style="margin: 0 0 25px 20px; padding: 0; line-height: 2; color: var(--text-gray);">
+                        <li>Physicians (MD, DO, DP)</li>
+                        <li>Medical Residents or Fellows</li>
+                        <li>Dentists (DDS and DMD)</li>
+                    </ul>
+                    
+                    <p style="font-size: 16px; line-height: 1.7; color: var(--text-gray);">Serving Phoenix, Scottsdale, Mesa, Tempe, Chandler, Gilbert and all of Arizona.</p>
+                </div>
+                <div>
+                    <div style="background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                        <h3 style="color: var(--primary-dark); margin-bottom: 20px;">Loan to Value Details</h3>
+                        <ul style="margin: 0; padding: 0; list-style: none; line-height: 2.2; color: var(--text-gray);">
+                            <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #eee; padding: 10px 0;">
+                                <span>100% financing</span>
+                                <span style="font-weight: 600;">up to $1,500,000</span>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #eee; padding: 10px 0;">
+                                <span>95% financing</span>
+                                <span style="font-weight: 600;">up to $1,750,000</span>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #eee; padding: 10px 0;">
+                                <span>90% financing</span>
+                                <span style="font-weight: 600;">up to $2,000,000</span>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; padding: 10px 0;">
+                                <span>85% financing</span>
+                                <span style="font-weight: 600;">up to $2,250,000</span>
+                            </li>
+                        </ul>
+                        <p style="font-size: 13px; color: #9ca3af; margin-top: 15px;">*Minimum 700 credit score required for all programs</p>
+                        <a href="prequalify.html" class="hero-cta" style="display: block; text-align: center; margin-top: 25px;">Apply Now →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section section-dark" style="background: linear-gradient(135deg, var(--primary-dark) 0%, #152a54 100%); padding: 100px 0;">
         <div class="container" style="text-align: center;">
-            <h2 style="color: white; margin-bottom: 15px; font-size: 28px; font-weight: 300;">Getting into your new home is just a click away</h2>
-            <p style="color: rgba(255,255,255,0.9); margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto; font-size: 16px;">From the time you apply for your physician home mortgage loan, until the day you close and get the keys to your new home, our specially trained and experienced staff manages and oversees the entire loan process, schedule a free consultation today to get started.</p>
-            <a href="prequalify.html" class="hero-cta" style="display: inline-flex;">Get Started</a>
+            <h2 style="color: white; font-size: 36px; font-weight: 300; margin-bottom: 15px;">Find and Secure Your Dream Home for Your Fellowship</h2>
+            <p style="color: rgba(255,255,255,0.9); font-size: 18px; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">Join 500+ Arizona physicians who've saved thousands. Get pre-approved in 24 hours with no obligation.</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="prequalify.html" class="hero-cta" style="font-size: 18px; padding: 20px 50px;">
+                    <i class="fas fa-rocket"></i> Get Pre-Approved Now
+                </a>
+                <a href="tel:4805550199" style="background: transparent; color: white; border: 2px solid white; padding: 20px 50px; border-radius: 8px; text-decoration: none; font-weight: 600; display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-phone"></i> (480) 555-0199
+                </a>
+            </div>
         </div>
     </section>
 
@@ -190,58 +367,41 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <h3>Arizona <span>Doctor Loans</span></h3>
-                    <p>Arizona's trusted physician mortgage specialist.</p>
+                    <p>Arizona's #1 physician mortgage specialist helping doctors, residents, and medical professionals achieve homeownership.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Loan Programs</h4>
                     <ul>
-                        <li><a href="physician-mortgages.html">Physician Mortgages</a></li>
-                        <li><a href="resident-mortgages.html">Resident Loans</a></li>
+                        <li><a href="resident-mortgages.html">Resident Mortgages</a></li>
                         <li><a href="fellow-mortgages.html">Fellow Loans</a></li>
                         <li><a href="attending-mortgages.html">Attending Loans</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="about-us.html">About Edward</a></li>
-                        <li><a href="contact-us.html">Contact</a></li>
-                        <li><a href="prequalify.html">Get Started</a></li>
-                    </ul>
-                </div>
                 <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <div class="footer-contact-card">
-                        <img src="edward-lopez.jpg" alt="Edward Lopez">
-                        <div class="footer-contact-info">
-                            <h5>Edward Lopez</h5>
-                            <p>NMLS #598677<br>(480) 555-0199</p>
-                        </div>
-                    </div>
+                    <h4>Contact Edward Lopez</h4>
+                    <p>NMLS #598677<br><a href="tel:4805550199" style="color: var(--accent-red);">(480) 555-0199</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Arizona Doctor Loans. All rights reserved.</p>
-                <p>NMLS #598677 | Arizona Mortgage Broker License</p>
-                <p><small>Built by <a href="https://realestateos.com" target="_blank" rel="noopener">Real Estate OS</a></small></p>
+                <p>&copy; 2026 Arizona Doctor Loans | NMLS #598677 | Arizona Mortgage Broker License</p>
             </div>
         </div>
     </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="sticky-cta">
+        <a href="tel:4805550199" style="background: var(--accent-red); color: white; padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: 600;">
+            <i class="fas fa-phone"></i> Call
+        </a>
+        <a href="prequalify.html" style="background: var(--primary-dark); color: white; padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: 600;">
+            Apply Now →
+        </a>
+    </div>
 
     <script>
         function toggleMenu() {
             document.getElementById('mainNav').classList.toggle('active');
         }
-        
-        document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
-            toggle.addEventListener('click', function(e) {
-                if (window.innerWidth <= 768) {
-                    e.preventDefault();
-                    this.parentElement.classList.toggle('active');
-                }
-            });
-        });
     </script>
-<script src="main.js"></script>
 </body>
 </html>
